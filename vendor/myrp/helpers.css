@@ -53,3 +53,19 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+
+.left {
+  float: left;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right {
+  float: right;
+}
+
+.right-align {
+  text-align: right;
+}
