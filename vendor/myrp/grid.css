@@ -1,7 +1,6 @@
 .row {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .row:after {
@@ -12,15 +11,8 @@
 
 .row .col {
   float: left;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0.75rem;
-  min-height: 1px;
-}
-
-.row .col[class*="push-"],
-.row .col[class*="pull-"] {
-  position: relative;
+  padding: 8px;
 }
 
 .row .col.s1 {
