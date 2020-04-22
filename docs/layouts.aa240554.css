@@ -1,0 +1,24 @@
+.layout {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 16px;
+}
+
+* > .layout:first {
+  margin-top: 0;
+}
+
+.layout > .col {
+  flex: 0;
+}
+
+.layout > .col {
+  flex: 100%;
+}
+
+.layout > .col {
+  flex: 0;
+}
+
+
+/*# sourceMappingURL=/layouts.aa240554.css.map */

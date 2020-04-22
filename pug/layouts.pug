@@ -7,6 +7,7 @@ html
 
 		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap', rel='stylesheet')
+		link(href='../vendor/myrp/badges.css', rel='stylesheet')
 		link(href='../vendor/myrp/buttons.css', rel='stylesheet')
 		link(href='../vendor/myrp/cards.css', rel='stylesheet')
 		link(href='../vendor/myrp/chips.css', rel='stylesheet')
@@ -308,18 +309,17 @@ html
 		#body
 			.row
 				.col.s12
-					.left
-						a.chip.grey.lighten-2 Filtro 1
-						a.chip.grey.lighten-1
-							span Filtro 2
-						a.chip.grey.lighten-2 Filtro 3
-						a.chip.grey.lighten-2 Filtro 4
-						a.chip.grey.lighten-2 Filtro 5
-						a.chip.grey.lighten-2 Filtro 6
-						a.chip.grey.lighten-2 Filtro 7
-						a.chip.white.border-chip
-							i.material-icons.left search
-							input(placeholder='Nome dos campos')
+					a.chip.grey.lighten-2 Filtro 1
+					a.chip.grey.lighten-1
+						i.material-icons.small done
+						span Filtro 2
+					a.chip.grey.lighten-2 Filtro 3
+					a.chip.grey.lighten-2 Filtro 4
+					a.chip.grey.lighten-2 Filtro 5
+					a.chip.grey.lighten-2 Filtro 6
+					a.chip.grey.lighten-2 Filtro 7
+					a.chip.grey.lighten-2
+						i.material-icons search
 
 				//.col.s12.m6.l3
 					.card
@@ -364,223 +364,238 @@ html
 
 					.card
 						h5 Timeline
-						.timeline
-							.timeline-item
+						.row.nowrap
+							.col.fill
 								i.material-icons.grey-text check_box_outline_blank
-								.timeline-actions
+							.col
+								nav
 									a.btn-flat.grey-text.hide-on-small-only Link 1
 									a.btn-flat.grey-text.hide-on-small-only Link 2
 									a.btn-flat.grey-text.hide-on-small-only Link 3
 									a.btn-flat.grey-text
-										i.material-icons.right more_vert
-								//.timeline-content.valign-wrapper
-									span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") Selecionar todos
-							.timeline-header
-								.timeline-title Data
-							.timeline-item
+										i.material-icons more_vert
+							//.timeline-content.valign-wrapper
+								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") Selecionar todos
+						label Hoje
+						.row.nowrap
+							.col
 								i.material-icons.light-green-text check_circle
-								.timeline-actions
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.dropdown-button( data-activates='dropdown1')
-										i.material-icons.right more_vert
-									ul#dropdown1.dropdown-content
+										i.material-icons more_vert
+									//ul#dropdown1.dropdown-content
 										li
 											a Link 1
 										li
 											a#button-side-nav1(href='#', data-activates='side-nav1') Link 2
 										li
 											a Link 3
-								.timeline-content
-									div.truncate Primeira linha
-									label.truncate
-										
-										span Segunda linha
-							.timeline-item
+						.row.nowrap
+							.col
 								i.material-icons.orange-text warning
-								.timeline-actions
+							.col.fill
+								div.truncate Segunda linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.timeline-content
-									div.truncate Segunda linha
-									label.truncate
-										
-										span Segunda linha
-							.timeline-item
+										i.material-icons more_vert
+						.row.nowrap
+							.col
 								i.material-icons.grey-text schedule
-								.timeline-actions
+							.col.fill
+								div.truncate Terceira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.timeline-content
-									div.truncate Terceira linha
-									label.truncate
-										
-										span Segunda linha
+										i.material-icons more_vert
 			
 					.card
 						h5 Timeline
-						.timeline
-							.timeline-item
+						.row.nowrap
+							.col.fill
 								i.material-icons.primary-color-text check_box
-								.timeline-actions
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.hide-on-small-only Link 2
 									a.btn-flat.primary-color-text.hide-on-small-only Link 3
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								//.timeline-content.valign-wrapper
-									span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") 3 selecionados
-							.timeline-header
-								.timeline-title Data
-							.timeline-item
+										i.material-icons more_vert
+							//.timeline-content.valign-wrapper
+								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") 3 selecionados
+						label Hoje
+						.row.nowrap
+							.col
 								i.material-icons.primary-color-text check_box
-								.timeline-actions
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.dropdown-button( data-activates='dropdown1')
-										i.material-icons.right more_vert
-									ul#dropdown1.dropdown-content
+										i.material-icons more_vert
+									//ul#dropdown1.dropdown-content
 										li
 											a Link 1
 										li
 											a#button-side-nav1(href='#', data-activates='side-nav1') Link 2
 										li
 											a Link 3
-								.timeline-content
-									div.truncate Primeira linha
-									label.truncate
-										
-										span Segunda linha
-							.timeline-item
+						.row.nowrap
+							.col
 								i.material-icons.primary-color-text check_box
-								.timeline-actions
+							.col.fill
+								div.truncate Segunda linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.timeline-content
-									div.truncate Segunda linha
-									label.truncate
-										
-										span Segunda linha
-							.timeline-item
+										i.material-icons more_vert
+						.row.nowrap
+							.col
 								i.material-icons.primary-color-text check_box
-								.timeline-actions
+							.col.fill
+								div.truncate Terceira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.timeline-content
-									div.truncate Terceira linha
-									label.truncate
-										
-										span Segunda linha
+										i.material-icons more_vert
 
 					.card
 						h5 List
-						.list
-							.list-item
-								.list-actions
+						.row.nowrap
+							.col.fill
+								i.material-icons.grey-text.left check_box_outline_blank
+								//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") Selecionar todos
+							.col
+								nav
 									a.btn-flat.grey-text.hide-on-small-only Link 1
 									a.btn-flat.grey-text.hide-on-small-only Link 2
 									a.btn-flat.grey-text.hide-on-small-only Link 3
 									a.btn-flat.grey-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.grey-text.left check_box_outline_blank
-									//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") Selecionar todos
-							.list-item
-								.list-actions
+										i.material-icons more_vert
+						.row.nowrap
+							.col
+								i.material-icons.light-green-text.left check_circle
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.dropdown-button( data-activates='dropdown1')
-										i.material-icons.right more_vert
-									ul#dropdown1.dropdown-content
+										i.material-icons more_vert
+									//ul#dropdown1.dropdown-content
 										li
 											a Link 1
 										li
 											a#button-side-nav1(href='#', data-activates='side-nav1') Link 2
 										li
 											a Link 3
-								.list-content
-									i.material-icons.light-green-text.left check_circle
-									div.truncate Primeira linha
-									label.truncate
-										
-										span Segunda linha
-							.list-item
-								.list-actions
+
+						.row.nowrap
+							.col
+								i.material-icons.orange-text.left warning
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.orange-text.left warning
-									div.truncate Segunda linha
-									label.truncate
-										
-										span Segunda linha
-							.list-item
-								.list-actions
+										i.material-icons more_vert
+
+						.row.nowrap
+							.col
+								i.material-icons.grey-text.left schedule
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha awuehaowue hwaoue hwaoue hwaoue hwaou ehwauo ehwauoeh waoueh awuoe hawoue hawuoe hawoue haowueh aowuehuawoheuo awheu hawoue hawuoe hawuohe uoawh eaowuh ewaou
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.grey-text.left schedule
-									div.truncate Terceira linha
-									label.truncate
-										
-										span Segunda linha
+										i.material-icons more_vert
 
 					.card
 						h5 List
-						.list
-							.list-item
-								.list-actions
+						.row.nowrap
+							.col.fill
+								i.material-icons.primary-color-text.left check_box
+								//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") 3 selecionados
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.hide-on-small-only Link 2
 									a.btn-flat.primary-color-text.hide-on-small-only Link 3
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.primary-color-text.left check_box
-									//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") 3 selecionados
-							.list-item
-								.list-actions
+										i.material-icons more_vert
+						.row.nowrap
+							.col
+								i.material-icons.primary-color-text.left check_box
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text.dropdown-button( data-activates='dropdown1')
-										i.material-icons.right more_vert
-									ul#dropdown1.dropdown-content
+										i.material-icons more_vert
+									//ul#dropdown1.dropdown-content
 										li
 											a Link 1
 										li
 											a#button-side-nav1(href='#', data-activates='side-nav1') Link 2
 										li
 											a Link 3
-								.list-content
-									i.material-icons.primary-color-text.left check_box
-									div.truncate Primeira linha
-									label.truncate
-										
-										span Segunda linha
-							.list-item
-								.list-actions
+						.row.nowrap
+							.col
+								i.material-icons.primary-color-text.left check_box
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.primary-color-text.left check_box
-									div.truncate Segunda linha
-									label.truncate
-										
-										span Segunda linha
-							.list-item
-								.list-actions
+										i.material-icons more_vert
+						.row.nowrap
+							.col
+								i.material-icons.primary-color-text.left check_box
+							.col.fill
+								div.truncate Primeira linha
+								label.truncate
+									span Segunda linha
+							.col
+								nav
 									a.btn-flat.primary-color-text.hide-on-small-only Link 1
 									a.btn-flat.primary-color-text
-										i.material-icons.right more_vert
-								.list-content
-									i.material-icons.primary-color-text.left check_box
-									div.truncate Terceira linha
-									label.truncate
-										
-										span Segunda linha
+										i.material-icons more_vert
 
 					.card
 						.left 
@@ -590,7 +605,7 @@ html
 							a.btn-flat.grey-text.hide-on-small-only Link 2
 							a.btn-flat.grey-text.hide-on-small-only Link 3
 							a.btn-flat.grey-text
-								i.material-icons.right more_vert
+								i.material-icons more_vert
 						table.bordered
 							thead
 								tr
@@ -610,7 +625,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 								tr
 									td
 										i.material-icons.left check_box_outline_blank
@@ -620,7 +635,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 								tr
 									td
 										i.material-icons.left check_box_outline_blank
@@ -630,7 +645,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 
 					.card
 						.left 
@@ -640,7 +655,7 @@ html
 							a.btn-flat.primary-color-text.hide-on-small-only Link 2
 							a.btn-flat.primary-color-text.hide-on-small-only Link 3
 							a.btn-flat.primary-color-text
-								i.material-icons.right more_vert
+								i.material-icons more_vert
 						table.bordered
 							thead
 								tr
@@ -660,7 +675,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 								tr
 									td
 										i.material-icons.primary-color-text.left check_box
@@ -670,7 +685,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 								tr
 									td
 										i.material-icons.primary-color-text.left check_box
@@ -680,7 +695,7 @@ html
 									td.right-align
 										a.btn-flat.primary-color-text.hide-on-small-only Link 1
 										a.btn-flat.primary-color-text
-											i.material-icons.right more_vert
+											i.material-icons more_vert
 
 					.card
 						h5 Form

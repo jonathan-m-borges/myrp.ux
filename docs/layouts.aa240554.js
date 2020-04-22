@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../vendor/prism/prism.css":[function(require,module,exports) {
+})({"../vendor/myrp/layouts.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51084" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54231" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -465,4 +465,4 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]);
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
-//# sourceMappingURL=/prism.6d16d487.js.map
+//# sourceMappingURL=/layouts.aa240554.js.map

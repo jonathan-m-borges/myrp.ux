@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../vendor/prism/prism.css":[function(require,module,exports) {
+})({"../vendor/myrp/navs.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -465,4 +465,4 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]);
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
-//# sourceMappingURL=/prism.6d16d487.js.map
+//# sourceMappingURL=/navs.60fbc74e.js.map
