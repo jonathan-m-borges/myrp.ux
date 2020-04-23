@@ -84,6 +84,10 @@
     height: 56px;
 }
 
+.btn *, .btn-flat * {
+    vertical-align: middle;
+}
+
 .btn.active {
 }
 
