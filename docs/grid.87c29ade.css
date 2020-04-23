@@ -13,15 +13,18 @@
   flex-flow: row nowrap;
 }
 
-.row.nowrap.middle-align {
+.row.middle-align {
+  display: flex;
   align-items: center;
 }
 
-.row.nowrap.top-align {
+.row.top-align {
+  display: flex;
   align-items: flex-start;
 }
 
-.row.nowrap.bottom-align {
+.row.bottom-align {
+  display: flex;
   align-items: flex-end;
 }
 

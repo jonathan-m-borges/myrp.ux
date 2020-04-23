@@ -277,34 +277,34 @@ html
 			a.breadcrumb.black-text.hide-on-small-only Cnpj
 			a.breadcrumb.black-text.hide-on-small-only Módulo
 		
-		.top.truncate
-			.row.valign-wrapper
-				.col.s6.valign-wrapper
-					h5 Título da página
-					a.btn.primary-color.white-text.hide-on-med-and-down Botão
-				.col.s6
-					nav.right-align.hide-on-small-only
-						a
-							i.material-icons.black-text search
-						a
-							span.badge.circle 10
-							i.material-icons.black-text notifications
-						a
-							i.material-icons.black-text apps
-						a
-							i.material-icons.black-text account_circle
-						a.hide-on-med-and-up
-							i.material-icons.black-text more_vert
+		.row.middle-align
+			.col.s6
+				a.h5 Título da página
+				a.btn Botão
+				a.btn.border.round Botão
+				a.btn.circle
+					i.material-icons add
+			.col.s6
+				nav.right-align.hide-on-small-only
+					a
+						i.material-icons.black-text search
+					a
+						span.badge.circle 10
+						i.material-icons.black-text notifications
+					a
+						i.material-icons.black-text apps
+					a
+						i.material-icons.black-text account_circle
+					a.hide-on-med-and-up
+						i.material-icons.black-text more_vert
 		
-		.bottom.truncate
-			.row
-				.col.s12.center
-					.hide-on-med-and-down
-						.btn.primary-color.white-text Botão
-					.hide-on-large-only
-						a.btn-floating.btn-large.primary-color.white-text
-							i.material-icons.large add
-						
+		.row.fixed.left.right.bottom
+			.col.s12.center
+				.hide-on-med-and-down
+					.btn Botão
+				.hide-on-large-only
+					a.btn-floating.btn-large.primary-color.white-text
+						i.material-icons.large add
 
 		#body
 			.row
@@ -317,8 +317,8 @@ html
 					a.chip.grey.lighten-2 Filtro 4
 					a.chip.grey.lighten-2 Filtro 5
 					a.chip.grey.lighten-2 Filtro 6
-					a.chip.grey.lighten-2 Filtro 7
-					a.chip.grey.lighten-2
+					a.chip Filtro 7
+					a.chip.circle
 						i.material-icons search
 
 				//.col.s12.m6.l3
@@ -343,16 +343,16 @@ html
 						div
 							canvas#grafico0
 						nav.right-align
-							a.blue-text Link 1
-							a.blue-text Link 2
+							a.btn-flat.blue-text Link 1
+							a.btn-flat.blue-text Link 2
 				.col.s12.l6
 					.card
 						h5 Gráfico
 						div
 							canvas#grafico1
 						nav
-							a.blue-text Link 1
-							a.blue-text Link 2
+							a.btn-flat.blue-text Link 1
+							a.btn-flat.blue-text Link 2
 				.col.s12
 					//ul.tabs.transparent
 						li.tab 
@@ -374,7 +374,7 @@ html
 									a.btn-flat.grey-text.hide-on-small-only Link 3
 									a.btn-flat.grey-text
 										i.material-icons more_vert
-							//.timeline-content.valign-wrapper
+							//.timeline-content
 								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") Selecionar todos
 						label Hoje
 						.row.nowrap
@@ -434,7 +434,7 @@ html
 									a.btn-flat.primary-color-text.hide-on-small-only Link 3
 									a.btn-flat.primary-color-text
 										i.material-icons more_vert
-							//.timeline-content.valign-wrapper
+							//.timeline-content
 								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") 3 selecionados
 						label Hoje
 						.row.nowrap

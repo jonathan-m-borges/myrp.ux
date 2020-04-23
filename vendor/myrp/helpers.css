@@ -9,6 +9,7 @@ body {
 
 a {
   cursor: pointer;
+  vertical-align: middle;
 }
 
 h1,
@@ -30,27 +31,27 @@ h6 {
   margin: 0 0 8px 0;
 }
 
-h1 {
+h1, .h1 {
   font-size: 4.2rem;
 }
 
-h2 {
+h2, .h2 {
   font-size: 3.56rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 2.92rem;
 }
 
-h4 {
+h4, .h4 {
   font-size: 2.28rem;
 }
 
-h5 {
+h5, .h5 {
   font-size: 1.64rem;
 }
 
-h6 {
+h6, .h6 {
   font-size: 0.9rem;
 }
 
@@ -119,4 +120,21 @@ h6 {
 label {
   font-size: 0.8rem;
   color: #9e9e9e;
+}
+
+.space {
+  height: 16px;
+  width: 100%;
+}
+
+.space.small {
+  height: 16px;
+}
+
+.space.medium {
+  height: 32px;
+}
+
+.space.large {
+  height: 48px;
 }
