@@ -1,16 +1,96 @@
 .badge {
+    position: absolute;
+    font-size: 0.6rem;
+    text-transform: none;
+    z-index: 1;
+    padding: 2px;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    transform: translate(50%,-100%);
+    line-height: normal!important;
+    background-color: #e91e63;
+    color: #ffffff;
 }
 
-.badge.outline {
+.badge.top {
+    top: 0;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%,-100%);
+}
+
+.badge.bottom {
+    top: auto;
+    left: 50%;
+    bottom: 0;
+    right: auto;
+    transform: translate(-50%,100%);
+}
+
+.badge.left {
+    float: none;
+    top: 50%;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    transform: translate(-100%,-50%);
+}
+
+.badge.right {
+    float: none;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    transform: translate(100%,-50%);
+}
+
+.badge.top.left {
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%,-100%);
+}
+
+.badge.top.right {
+    top: 0;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    transform: translate(50%,-100%);
+}
+
+.badge.bottom.left {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    transform: translate(-50%,100%);
+}
+
+.badge.bottom.right {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,100%);
 }
 
 .badge.round {
+    border-radius: 8px;
 }
 
 .badge.circle {
-}
-
-.badge.active {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    line-height: 16px!important;
+    text-align: center;
+    border-radius: 50%;
 }
 
 
