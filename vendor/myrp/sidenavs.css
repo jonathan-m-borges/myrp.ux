@@ -10,23 +10,26 @@
 .sidenav.large {
 }
 
-.sidenav > .left {
+.sidenav.left {
 }
 
-.sidenav > .right {
+.sidenav.right {
 }
 
-.sidenav > .top {
+.sidenav.top {
 }
 
-.sidenav > .bottom {
+.sidenav.bottom {
 }
 
-.sidenav > nav {
-}
-
-.sidenav.outline {
+.sidenav.border {
 }
 
 .sidenav.round {
+}
+
+.sidenav.circle {
+}
+
+.sidenav.active {
 }
