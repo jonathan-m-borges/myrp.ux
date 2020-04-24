@@ -1,6 +1,5 @@
 .btn {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     display: inline-block;
     height: 32px;
     font-size: 0.9rem;
@@ -13,13 +12,22 @@
     text-transform: uppercase;
 }
 
-.btn-flat {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 0 8px;
+.btn:hover {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btn > * {
+    vertical-align: middle;
+}
+
+.btn.flat {
+    box-shadow: none;
+    height: auto;
+    color: #000000;
+    line-height: normal;
     padding: 0;
-    display: inline-block;
+    background-color: transparent;
+    margin: 0 8px;
 }
 
 .btn.small {
@@ -63,8 +71,9 @@
     width: 48px;
     height: 48px;
     padding: 0;
-    line-height: normal;
+    line-height: 48px;
     border-radius: 50%;
+    text-align: center;
 }
 
 .btn.circle > i {
@@ -77,18 +86,13 @@
 .btn.circle.small {
     width: 40px;
     height: 40px;
+    line-height: 40px;
 }
 
 .btn.circle.large {
     width: 56px;
     height: 56px;
-}
-
-.btn *, .btn-flat * {
-    vertical-align: middle;
-}
-
-.btn.active {
+    line-height: 56px;
 }
 
 

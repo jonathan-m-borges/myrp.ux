@@ -5,6 +5,10 @@
   padding: 16px;
 }
 
+.card + .card {
+  margin-top: 16px;
+}
+
 .card.small {
   height: 200px;
 }
@@ -25,16 +29,5 @@
 .card.round {
   border-radius: 16px;
 }
-
-.card.circle {
-}
-
-.card.active {
-}
-
-.card + .card {
-  margin-top: 16px;
-}
-
 
 /*# sourceMappingURL=/cards.8a6428f3.css.map */

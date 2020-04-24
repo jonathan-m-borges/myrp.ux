@@ -18,15 +18,6 @@
   line-height: 32px;
 }
 
-.chip.small {
-}
-
-.chip.medium {
-}
-
-.chip.large {
-}
-
 .chip.border {
   border: 1px solid #e0e0e0;
   background-color: #ffffff;
@@ -40,6 +31,7 @@
   width: 32;
   height: 32px;
   padding: 0;
+  text-align: center;
 }
 
 .chip.circle > i {

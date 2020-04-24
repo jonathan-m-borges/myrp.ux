@@ -13,11 +13,11 @@ nav > a {
 }
 
 nav > a:first-child {
-  margin-left: 0;
+  margin-left: 0!important;
 }
 
 nav > a:last-child {
-  margin-right: 0;
+  margin-right: 0!important;
 }
 
 /*# sourceMappingURL=/navs.60fbc74e.css.map */

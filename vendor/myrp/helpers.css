@@ -1,11 +1,11 @@
-body * {
-  position: relative;
-}
-
 body {
   font-family: "Roboto";
   font-size: 0.9rem;
   margin: 8px;
+}
+
+body * {
+  position: relative;
 }
 
 a {
@@ -74,6 +74,16 @@ h6, .h6 {
 
 .fixed {
   position: fixed;
+}
+
+.absolute.center, .fixed.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute.middle, .fixed.middle {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .absolute.top, .fixed.top {
