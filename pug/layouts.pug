@@ -17,6 +17,7 @@ html
 		link(href='../vendor/myrp/modals.css', rel='stylesheet')
 		link(href='../vendor/myrp/navs.css', rel='stylesheet')
 		link(href='../vendor/myrp/tables.css', rel='stylesheet')
+		link(href='../vendor/myrp/tabs.css', rel='stylesheet')
 
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js')
@@ -296,7 +297,7 @@ html
 					a.hide-on-med-and-up
 						i.material-icons.black-text more_vert
 		
-		nav.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
+		.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
 			a.hide-on-med-and-down.btn Botão
 
 		#body
@@ -314,23 +315,11 @@ html
 						a.chip Filtro 7
 						a.chip.circle
 							i.material-icons search
-
-				//.col.s12.m6.l3
-					.card
-						label.black-text Primeira linha
-						h5 Segunda linha
-				//.col.s12.m6.l3
-					.card
-						label.black-text Primeira linha
-						h5 Segunda linha
-				//.col.s12.m6.l3
-					.card
-						label.black-text Primeira linha
-						h5 Segunda linha
-				//.col.s12.m6.l3
-					.card
-						label.black-text Primeira linha
-						h5 Segunda linha
+				.col.s12
+					.tabs
+						a.active Aba 1
+						a Aba 2
+						a Aba 3
 				.col.s12.l6
 					.card
 						h5 Gráfico
@@ -348,28 +337,8 @@ html
 							a.btn.flat.blue-text Link 1
 							a.btn.flat.blue-text Link 2
 				.col.s12
-					//ul.tabs.transparent
-						li.tab 
-							a Aba 1
-						li.tab 
-							a Aba 2
-						li.tab 
-							a Aba 3
-
 					.card
 						h5 Timeline
-						.row.nowrap
-							.col.max
-								i.material-icons.grey-text check_box_outline_blank
-							.col
-								nav
-									a.btn.flat.grey-text.hide-on-small-only Link 1
-									a.btn.flat.grey-text.hide-on-small-only Link 2
-									a.btn.flat.grey-text.hide-on-small-only Link 3
-									a.btn.flat.grey-text
-										i.material-icons more_vert
-							//.timeline-content
-								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") Selecionar todos
 						label Hoje
 						.row.nowrap
 							.col
@@ -408,73 +377,9 @@ html
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
-			
-					.card
-						h5 Timeline
-						.row.nowrap
-							.col.max
-								i.material-icons check_box
-							.col
-								nav
-									a.btn.flat.hide-on-small-only Link 1
-									a.btn.flat.hide-on-small-only Link 2
-									a.btn.flat.hide-on-small-only Link 3
-									a.btn.flat
-										i.material-icons more_vert
-							//.timeline-content
-								span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500;") 3 selecionados
-						label Hoje
-						.row.nowrap
-							.col
-								i.material-icons check_box
-							.col.max
-								div.truncate Primeira linha
-								label.truncate
-									span Segunda linha
-							.col
-								nav
-									a.btn.flat.hide-on-small-only Link 1
-									a.btn.flat
-										i.material-icons more_vert
-
-						.row.nowrap
-							.col
-								i.material-icons check_box
-							.col.max
-								div.truncate Segunda linha
-								label.truncate
-									span Segunda linha
-							.col
-								nav
-									a.btn.flat.hide-on-small-only Link 1
-									a.btn.flat
-										i.material-icons more_vert
-						.row.nowrap
-							.col
-								i.material-icons check_box
-							.col.max
-								div.truncate Terceira linha
-								label.truncate
-									span Segunda linha
-							.col
-								nav
-									a.btn.flat.hide-on-small-only Link 1
-									a.btn.flat
-										i.material-icons more_vert
 
 					.card
 						h5 List
-						.row.nowrap
-							.col.max
-								i.material-icons.grey-text.left check_box_outline_blank
-								//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") Selecionar todos
-							.col
-								nav
-									a.btn.flat.grey-text.hide-on-small-only Link 1
-									a.btn.flat.grey-text.hide-on-small-only Link 2
-									a.btn.flat.grey-text.hide-on-small-only Link 3
-									a.btn.flat.grey-text
-										i.material-icons more_vert
 						.row.nowrap
 							.col
 								i.material-icons.light-green-text.left check_circle
@@ -506,7 +411,7 @@ html
 							.col.max
 								div.truncate Primeira linha
 								label.truncate
-									span Segunda linha awuehaowue hwaoue hwaoue hwaoue hwaou ehwauo ehwauoeh waoueh awuoe hawoue hawuoe hawoue haowueh aowuehuawoheuo awheu hawoue hawuoe hawuohe uoawh eaowuh ewaou
+									span Segunda linha
 							.col
 								nav
 									a.btn.flat.hide-on-small-only Link 1
