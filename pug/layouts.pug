@@ -16,6 +16,7 @@ html
 		link(href='../vendor/myrp/helpers.css', rel='stylesheet')
 		link(href='../vendor/myrp/modals.css', rel='stylesheet')
 		link(href='../vendor/myrp/navs.css', rel='stylesheet')
+		link(href='../vendor/myrp/tables.css', rel='stylesheet')
 
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js')
@@ -307,17 +308,18 @@ html
 		#body
 			.row
 				.col.s12
-					a.chip.grey.lighten-2 Filtro 1
-					a.chip.grey.lighten-1
-						i.material-icons.small done
-						span Filtro 2
-					a.chip.grey.lighten-2 Filtro 3
-					a.chip.grey.lighten-2 Filtro 4
-					a.chip.grey.lighten-2 Filtro 5
-					a.chip.grey.lighten-2 Filtro 6
-					a.chip Filtro 7
-					a.chip.circle
-						i.material-icons search
+					nav
+						a.chip.grey.lighten-2 Filtro 1
+						a.chip.grey.lighten-1
+							i.material-icons.small done
+							span Filtro 2
+						a.chip.grey.lighten-2 Filtro 3
+						a.chip.grey.lighten-2 Filtro 4
+						a.chip.grey.lighten-2 Filtro 5
+						a.chip.grey.lighten-2 Filtro 6
+						a.chip Filtro 7
+						a.chip.circle
+							i.material-icons search
 
 				//.col.s12.m6.l3
 					.card
@@ -521,7 +523,7 @@ html
 						h5 List
 						.row.nowrap
 							.col.max
-								i.material-icons.left check_box
+								i.material-icons check_box
 								//span.uppercase.left.hide-on-med-and-down(style="font-size:0.9rem; font-weight: 500; margin-top: 10px;") 3 selecionados
 							.col
 								nav
@@ -532,7 +534,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col
-								i.material-icons.left check_box
+								i.material-icons check_box
 							.col.max
 								div.truncate Primeira linha
 								label.truncate
@@ -544,7 +546,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col
-								i.material-icons.left check_box
+								i.material-icons check_box
 							.col.max
 								div.truncate Primeira linha
 								label.truncate
@@ -556,7 +558,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col
-								i.material-icons.left check_box
+								i.material-icons check_box
 							.col.max
 								div.truncate Primeira linha
 								label.truncate
@@ -568,19 +570,21 @@ html
 										i.material-icons more_vert
 
 					.card
-						.left 
-							h5 Table
-						.right
-							a.btn.flat.grey-text.hide-on-small-only Link 1
-							a.btn.flat.grey-text.hide-on-small-only Link 2
-							a.btn.flat.grey-text.hide-on-small-only Link 3
-							a.btn.flat.grey-text
-								i.material-icons more_vert
-						table.bordered
+						.row.nowrap
+							.col.max
+								h5 Table
+							.col
+								nav
+									a.btn.flat.grey-text.hide-on-small-only Link 1
+									a.btn.flat.grey-text.hide-on-small-only Link 2
+									a.btn.flat.grey-text.hide-on-small-only Link 3
+									a.btn.flat.grey-text
+										i.material-icons more_vert
+						table.border
 							thead
 								tr
 									th
-										i.material-icons.left check_box_outline_blank
+										i.material-icons check_box_outline_blank
 									th Coluna 1
 									th Coluna 2
 									th Coluna 3
@@ -588,49 +592,54 @@ html
 							tbody
 								tr
 									td
-										i.material-icons.left check_box_outline_blank
+										i.material-icons check_box_outline_blank
 									td Linha 1
 									td Linha 1
 									td Linha 1
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 								tr
 									td
-										i.material-icons.left check_box_outline_blank
+										i.material-icons check_box_outline_blank
 									td Linha 2
 									td Linha 2
 									td Linha 2
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 								tr
 									td
-										i.material-icons.left check_box_outline_blank
+										i.material-icons check_box_outline_blank
 									td Linha 3
 									td Linha 3
 									td Linha 3
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 
 					.card
-						.left 
-							h5 Table
-						.right
-							a.btn.flat.hide-on-small-only Link 1
-							a.btn.flat.hide-on-small-only Link 2
-							a.btn.flat.hide-on-small-only Link 3
-							a.btn.flat
-								i.material-icons more_vert
-						table.bordered
+						.row.nowrap
+							.col.max
+								h5 Table
+							.col
+								nav
+									a.btn.flat.grey-text.hide-on-small-only Link 1
+									a.btn.flat.grey-text.hide-on-small-only Link 2
+									a.btn.flat.grey-text.hide-on-small-only Link 3
+									a.btn.flat.grey-text
+										i.material-icons more_vert
+						table.border
 							thead
 								tr
 									th
-										i.material-icons.left check_box
+										i.material-icons check_box
 									th Coluna 1
 									th Coluna 2
 									th Coluna 3
@@ -638,34 +647,37 @@ html
 							tbody
 								tr
 									td
-										i.material-icons.left check_box
+										i.material-icons check_box
 									td Linha 1
 									td Linha 1
 									td Linha 1
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 								tr
 									td
-										i.material-icons.left check_box
+										i.material-icons check_box
 									td Linha 2
 									td Linha 2
 									td Linha 2
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 								tr
 									td
-										i.material-icons.left check_box
+										i.material-icons check_box
 									td Linha 3
 									td Linha 3
 									td Linha 3
-									td.right-align
-										a.btn.flat.hide-on-small-only Link 1
-										a.btn.flat
-											i.material-icons more_vert
+									td
+										nav.right-align
+											a.btn.flat.hide-on-small-only Link 1
+											a.btn.flat
+												i.material-icons more_vert
 
 					.card
 						h5 Form

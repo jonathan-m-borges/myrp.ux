@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+    font-size: 0.9rem;
+}
+
+table th {
+    width:1%;
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 0;
+}
+
+table td {
+    width:1%;
+    text-align: left;
+    padding: 8px 0;
+}
+
+table.border td {
+    border-top: 1px solid #e0e0e0;
+}
+
+table.small td, table.small th {
+    padding: 4px 0;
+}
+
+table.medium td, table.medium th {
+padding: 8px 0;
+}
+
+table.large td, table.large th {
+padding: 16px 0;
+}
+
+/*# sourceMappingURL=/tables.f60521b7.css.map */

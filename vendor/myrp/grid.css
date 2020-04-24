@@ -8,11 +8,6 @@
   clear: both;
 }
 
-.row.nowrap {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
 .row.middle-align {
   display: flex;
   align-items: center;
@@ -33,6 +28,10 @@
   box-sizing: border-box;
   padding: 8px;
   width: min-content;
+}
+
+.row.nowrap {
+  display: flex;
 }
 
 .row.nowrap .col, .row.nowrap .col.min {
