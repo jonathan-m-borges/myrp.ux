@@ -32,27 +32,33 @@ h6 {
   margin: 0 0 8px 0;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 4.2rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 3.56rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 2.92rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 2.28rem;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.64rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 0.9rem;
 }
 
@@ -76,63 +82,77 @@ h6, .h6 {
   position: fixed;
 }
 
-.absolute.center, .fixed.center {
+.absolute.center,
+.fixed.center {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.absolute.middle, .fixed.middle {
+.absolute.middle,
+.fixed.middle {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.absolute.top, .fixed.top {
+.absolute.top,
+.fixed.top {
   top: 0;
 }
 
-.absolute.left, .fixed.left {
-  float:none;
+.absolute.left,
+.fixed.left {
+  float: none;
   left: 0;
 }
 
-.absolute.right, .fixed.right {
-  float:none;
+.absolute.right,
+.fixed.right {
+  float: none;
   right: 0;
 }
 
-.absolute.bottom, .fixed.bottom {
+.absolute.bottom,
+.fixed.bottom {
   bottom: 0;
 }
 
-.absolute.top.bottom, .fixed.top.bottom {
+.absolute.top.bottom,
+.fixed.top.bottom {
   height: 100%;
 }
 
-.absolute.left.right, .fixed.left.right {
+.absolute.left.right,
+.fixed.left.right {
   width: 100%;
 }
 
-.absolute.left.right.small, .fixed.left.right.small {
+.absolute.left.right.small,
+.fixed.left.right.small {
   height: 350px;
 }
 
-.absolute.left.right.medium, .fixed.left.right.medium {
+.absolute.left.right.medium,
+.fixed.left.right.medium {
   height: 475px;
 }
 
-.absolute.left.right.large, .fixed.left.right.large {
+.absolute.left.right.large,
+.fixed.left.right.large {
   height: 700px;
 }
 
-.absolute.top.bottom.small, .fixed.left.right.small {
+.absolute.top.bottom.small,
+.fixed.left.right.small {
   width: 350px;
 }
 
-.absolute.top.bottom.medium, .fixed.top.bottom.medium {
+.absolute.top.bottom.medium,
+.fixed.top.bottom.medium {
   width: 475px;
 }
 
-.absolute.top.bottom.large, .fixed.top.bottom.large {
+.absolute.top.bottom.large,
+.fixed.top.bottom.large {
   width: 700px;
 }
 
@@ -171,7 +191,7 @@ label {
 }
 
 .front {
-  z-index: 1
+  z-index: 1;
 }
 
 .back {

@@ -34,7 +34,8 @@
   display: flex;
 }
 
-.row.nowrap .col, .row.nowrap .col.min {
+.row.nowrap .col,
+.row.nowrap .col.min {
   float: none;
   flex: 0;
 }
