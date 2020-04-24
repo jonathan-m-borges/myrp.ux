@@ -197,3 +197,37 @@ label {
 .back {
   z-index: -1;
 }
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.small-padding {
+  padding: 8px !important;
+}
+
+.medium-padding,
+.padding {
+  padding: 16px !important;
+}
+
+.large-padding {
+  padding: 24px !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.small-margin {
+  margin: 8px !important;
+}
+
+.medium-margin,
+.margin {
+  margin: 16px !important;
+}
+
+.large-margin {
+  margin: 24px !important;
+}
