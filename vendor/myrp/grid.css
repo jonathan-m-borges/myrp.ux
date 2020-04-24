@@ -35,12 +35,12 @@
   width: min-content;
 }
 
-.row.nowrap .col {
+.row.nowrap .col, .row.nowrap .col.min {
   float: none;
   flex: 0;
 }
 
-.row.nowrap .col.fill {
+.row.nowrap .col.max {
   flex: 1;
 }
 

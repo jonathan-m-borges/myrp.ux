@@ -56,23 +56,15 @@ h6, .h6 {
   font-size: 0.9rem;
 }
 
-.left {
-  float: left;
-}
-
 .left-align {
   text-align: left;
-}
-
-.right {
-  float: right;
 }
 
 .right-align {
   text-align: right;
 }
 
-.center, .center-align {
+.center-align {
   text-align: center;
 }
 
@@ -110,6 +102,30 @@ h6, .h6 {
   width: 100%;
 }
 
+.absolute.left.right.small, .fixed.left.right.small {
+  height: 350px;
+}
+
+.absolute.left.right.medium, .fixed.left.right.medium {
+  height: 475px;
+}
+
+.absolute.left.right.large, .fixed.left.right.large {
+  height: 700px;
+}
+
+.absolute.top.bottom.small, .fixed.left.right.small {
+  width: 350px;
+}
+
+.absolute.top.bottom.medium, .fixed.top.bottom.medium {
+  width: 475px;
+}
+
+.absolute.top.bottom.large, .fixed.top.bottom.large {
+  width: 700px;
+}
+
 .material-icons.small {
   font-size: 16px;
 }
@@ -142,4 +158,12 @@ label {
 
 .space.large {
   height: 48px;
+}
+
+.front {
+  z-index: 1
+}
+
+.back {
+  z-index: -1;
 }
