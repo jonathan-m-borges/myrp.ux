@@ -35,13 +35,13 @@
 }
 
 .row.nowrap .col,
-.row.nowrap .col.min {
+.row.nowrap .col.max {
   float: none;
-  flex: 0;
+  flex: 1;
 }
 
-.row.nowrap .col.max {
-  flex: 1;
+.row.nowrap .col.min {
+  flex: 0;
 }
 
 .row .col.s1 {

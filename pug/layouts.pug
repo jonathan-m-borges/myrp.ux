@@ -285,18 +285,27 @@ html
 			.col.s6
 				nav.right-align.hide-on-small-only
 					a
+						span.badge New
 						i.material-icons.black-text search
 					a
-						span.badge.circle 10
+						span.badge.round New
 						i.material-icons.black-text notifications
 					a
+						span.badge.border New
 						i.material-icons.black-text apps
 					a
+						span.badge.border.round New
+						i.material-icons.black-text help_outline
+					a
+						span.badge.circle 10
+						i.material-icons.black-text home
+					a
+						span.badge.circle.border 10
 						i.material-icons.black-text account_circle
 					a.hide-on-med-and-up
 						i.material-icons.black-text more_vert
 		
-		.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
+		#bottom.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
 			nav
 				a.btn Botão
 				a.btn.round Botão
@@ -329,16 +338,39 @@ html
 						a.chip.border
 							i.material-icons.small done
 							span Filtro 4
-						a.chip.grey.lighten-2 Filtro 5
-						a.chip.grey.lighten-2 Filtro 6
-						a.chip Filtro 7
 						a.chip.circle
 							i.material-icons search
+						a.chip.circle.border
+							i.material-icons refresh
 				.col.s12
 					.tabs
 						a.active Aba 1
 						a Aba 2
 						a Aba 3
+				.col.s3
+					.card
+						h5 Card
+						div Segunda linha
+						nav
+							a.btn.flat.blue-text Link
+				.col.s3
+					.card.round
+						h5 Card
+						div Segunda linha
+						nav
+							a.btn.flat.blue-text Link
+				.col.s3
+					.card.border
+						h5 Card
+						div Segunda linha
+						nav
+							a.btn.flat.blue-text Link
+				.col.s3
+					.card.border.round
+						h5 Card
+						div Segunda linha
+						nav
+							a.btn.flat.blue-text Link
 				.col.s12.l6
 					.card
 						h5 Gráfico
@@ -360,38 +392,38 @@ html
 						h5 Timeline
 						label Hoje
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.light-green-text check_circle
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.orange-text warning
-							.col.max
+							.col
 								div.truncate Segunda linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.grey-text schedule
-							.col.max
+							.col
 								div.truncate Terceira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
@@ -400,38 +432,38 @@ html
 					.card
 						h5 List
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.light-green-text.left check_circle
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.orange-text.left warning
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons.grey-text.left schedule
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
@@ -440,9 +472,9 @@ html
 					.card
 						h5 List
 						.row.nowrap
-							.col.max
-								i.material-icons check_box_outline_blank
 							.col
+								i.material-icons check_box_outline_blank
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat.hide-on-small-only Link 2
@@ -450,37 +482,37 @@ html
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons check_box_outline_blank
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons check_box_outline_blank
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
 										i.material-icons more_vert
 						.row.nowrap
-							.col
+							.col.min
 								i.material-icons check_box_outline_blank
-							.col.max
+							.col
 								div.truncate Primeira linha
 								label.truncate
 									span Segunda linha
-							.col
+							.col.min
 								nav
 									a.btn.flat.hide-on-small-only Link 1
 									a.btn.flat
@@ -488,9 +520,9 @@ html
 
 					.card
 						.row.nowrap
-							.col.max
-								h5 Table
 							.col
+								h5 Table
+							.col.min
 								nav
 									a.btn.flat.grey-text.hide-on-small-only Link 1
 									a.btn.flat.grey-text.hide-on-small-only Link 2
@@ -624,9 +656,9 @@ html
 
 		$(window).on('scroll resize', function() {
 			if ($(window).width() <= 992 || $('#body').offset().top < $(document).scrollTop())
-				$('.bottom').show();
+				$('#bottom').show();
 			else
-				$('.bottom').hide();
+				$('#bottom').hide();
 		});
 
 		$('#up').on('click', function() {
