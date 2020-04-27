@@ -34,10 +34,15 @@
   display: flex;
 }
 
+.row.nowrap + .row.nowrap {
+  margin-top: 16px;
+}
+
 .row.nowrap .col,
 .row.nowrap .col.max {
   float: none;
   flex: 1;
+  padding: 0 8px;
 }
 
 .row.nowrap .col.min {
