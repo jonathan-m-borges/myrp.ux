@@ -1,6 +1,8 @@
 .tabs {
   margin: 8px 0;
   white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -10,26 +12,13 @@
 
 .tabs > a {
   display: inline-block;
-  height: 32px;
   font-size: 0.9rem;
   font-weight: 500;
   color: #000000;
-  line-height: 32px;
-  padding: 0 12px;
-  margin: 0 8px;
+  padding: 8px 16px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
-}
-
-.tabs.wrap > a {
-  width: auto;
-  height: auto;
-  line-height: 24px;
   text-align: center;
-}
-
-.tabs.wrap > a > i {
-  display: block;
 }
 
 .tabs > a:first-child {
@@ -40,8 +29,12 @@
   margin-right: 0 !important;
 }
 
-.tabs > a > * {
+.tabs > a > i {
   vertical-align: middle;
+}
+
+.tabs > a.wrap > i {
+  display: block;
 }
 
 .tabs > .active {
