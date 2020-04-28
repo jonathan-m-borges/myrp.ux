@@ -33,10 +33,6 @@
   vertical-align: middle;
 }
 
-.tabs > a.wrap > i {
-  display: block;
-}
-
 .tabs > .active {
   border-bottom: 2px solid #000000;
 }

@@ -231,3 +231,7 @@ label {
 .large-margin {
   margin: 24px !important;
 }
+
+.wrap {
+  display: block;
+}
