@@ -29,7 +29,7 @@
   margin-right: 0 !important;
 }
 
-.tabs > a > i {
+.tabs > a > * {
   vertical-align: middle;
 }
 

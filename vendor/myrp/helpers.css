@@ -175,19 +175,22 @@ label {
 
 .space {
   height: 16px;
-  width: 100%;
+  display: block;
 }
 
-.space.small {
+.small-space {
   height: 16px;
+  display: block;
 }
 
-.space.medium {
+.medium-space {
   height: 32px;
+  display: block;
 }
 
-.space.large {
+.large-space {
   height: 48px;
+  display: block;
 }
 
 .front {
