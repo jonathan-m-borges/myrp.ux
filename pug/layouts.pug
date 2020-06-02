@@ -307,14 +307,14 @@ html
 		
 		#bottom.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
 			nav
-				a.btn Botão
-				a.btn.round Botão
-				a.btn.circle
-					i.material-icons edit
-				a.btn.border Botão
-				a.btn.border.round Botão
-				a.btn.border.circle
-					i.material-icons edit
+				a.btn(onclick="$('.modal')[0].className = 'modal open';") Modal
+				a.btn.round(onclick="$('.modal')[0].className = 'modal open';") Modal
+				a.btn.circle(onclick="$('.modal')[0].className = 'modal open';")
+					i.material-icons open_in_new
+				a.btn.border(onclick="$('.modal')[0].className = 'modal open';") Modal
+				a.btn.border.round(onclick="$('.modal')[0].className = 'modal open';") Modal
+				a.btn.border.circle(onclick="$('.modal')[0].className = 'modal open';")
+					i.material-icons open_in_new
 
 		#body
 			.row
@@ -639,12 +639,16 @@ html
 										input(type='checkbox')
 										span.lever
 
-					.modal.top.bottom.left
+					.modal
 						h5 Modal
 						div Modal content
 						nav
-							a.btn.flat.blue-text Link 1
-							a.btn.flat.blue-text Link 2
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal left open';") Left
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal right open';") Right
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal top open';") Top
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal bottom open';") Bottom
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal open';") Reset
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal';") Close
 
 	script(type='text/javascript').
 		$('#button-side-nav1').sideNav({
