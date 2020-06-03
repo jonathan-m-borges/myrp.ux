@@ -12,6 +12,7 @@ html
 		link(href='../vendor/myrp/cards.css', rel='stylesheet')
 		link(href='../vendor/myrp/chips.css', rel='stylesheet')
 		link(href='../vendor/myrp/colors.css', rel='stylesheet')
+		link(href='../vendor/myrp/forms.css', rel='stylesheet')
 		link(href='../vendor/myrp/grid.css', rel='stylesheet')
 		link(href='../vendor/myrp/helpers.css', rel='stylesheet')
 		link(href='../vendor/myrp/modals.css', rel='stylesheet')
@@ -584,54 +585,141 @@ html
 												i.material-icons more_vert
 
 					.card
-						h5 Form
+						h5 Inputs
+						.row
+							.col.s12.m4
+								.field
+									input(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									i.material-icons search
+									input(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									input(type="text")
+									label Texto
+									i.material-icons search
+							.col.s12.m4
+								.field
+									input.border(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									i.material-icons search
+									input.border(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									input.border(type="text")
+									label Texto
+									i.material-icons search
+							.col.s12.m4
+								.field
+									input.fill(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									i.material-icons search
+									input.fill(type="text")
+									label Texto
+							.col.s12.m4
+								.field
+									input.fill(type="text")
+									label Texto
+									i.material-icons search
+					.card
+						h5 Selects
 						.row
 							.col.s12.m6
-								.input-field
-									i.material-icons.prefix.grey-text search
-									input#input11(type='text')
-									label(for='input11') Autocompletar
-							.col.s12.m6
-								.input-field
-									i.material-icons.prefix.grey-text today
-									input#input12(type='text')
-									label(for='input12') Data
-							.col.s12.m6
-								.input-field
-									label.active(for='input10') Lista
-									select#input10.browser-default
+								.field
+									select
 										option Item 1
 										option Item 2
 										option Item 3
+									label.active Lista
+									i.material-icons arrow_drop_down
 							.col.s12.m6
-								.input-field
-									input#input9(type='text')
-									label(for='input9') Texto
+								.field
+									i.material-icons arrow_drop_down
+									select
+										option Item 1
+										option Item 2
+										option Item 3
+									label.active Lista
 							.col.s12.m6
-								label Marcar vários itens
-								p
-									span
-										input#input13a.filled-in(type='checkbox')
-										label(for='input13a') Item 1
-									span
-										input#input13b.filled-in(type='checkbox')
-										label(for='input13b') Item 2
-									span
-										input#input13c.filled-in(type='checkbox')
-										label(for='input13c') Item 3
+								.field
+									select.border
+										option Item 1
+										option Item 2
+										option Item 3
+									label.active Lista
+									i.material-icons arrow_drop_down
 							.col.s12.m6
-								label Marcar somente um item
-								p
-									span
-										input#input14a.filled-in(type='radio', name="input14")
-										label(for='input14a') Item 1
-									span
-										input#input14b.filled-in(type='radio', name="input14")
-										label(for='input14b') Item 2
-									span
-										input#input14c.filled-in(type='radio', name="input14")
-										label(for='input14c') Item 3
-								
+								.field
+									i.material-icons arrow_drop_down
+									select.border
+										option Item 1
+										option Item 2
+										option Item 3
+									label.active Lista
+							.col.s12.m6
+								.field
+									select.fill
+										option Item 1
+										option Item 2
+										option Item 3
+									label.active Lista
+									i.material-icons arrow_drop_down
+							.col.s12.m6
+								.field
+									i.material-icons arrow_drop_down
+									select.fill
+										option Item 1
+										option Item 2
+										option Item 3
+									label.active Lista
+					.card
+						h5 Checkboxes
+						.row
+							.col.s12.m6
+								.field
+									label Marque uma ou mais opções
+									input#inputCheckbox1(type='checkbox')
+									label(for='inputCheckbox1') Item 1
+									input#inputCheckbox2(type='checkbox')
+									label(for='inputCheckbox2') Item 2
+									input#inputCheckbox3(type='checkbox')
+									label(for='inputCheckbox3') Item 3
+							.col.s12.m6
+								.field.middle-align
+									input#inputCheckbox10(type='checkbox')
+									label(for='inputCheckbox10') Item 1
+									input#inputCheckbox20(type='checkbox')
+									label(for='inputCheckbox20') Item 2
+									input#inputCheckbox30(type='checkbox')
+									label(for='inputCheckbox30') Item 3
+					.card
+						h5 Radios
+						.row
+							.col.s12.m6
+								.field
+									label Marque uma opção
+									input#inputRadio1(type='radio', name="inputRadio0")
+									label(for='inputRadio1') Item 1
+									input#inputRadio2(type='radio', name="inputRadio0")
+									label(for='inputRadio2') Item 2
+									input#inputRadio3(type='radio', name="inputRadio0")
+									label(for='inputRadio3') Item 3
+							.col.s12.m6
+								.field.middle-align
+									input#inputRadio10(type='radio', name="inputRadio00")
+									label(for='inputRadio10') Item 1
+									input#inputRadio20(type='radio', name="inputRadio00")
+									label(for='inputRadio20') Item 2
+									input#inputRadio30(type='radio', name="inputRadio00")
+									label(for='inputRadio30') Item 3
 							.col.s12
 								.switch
 									| Uma pergunta?
