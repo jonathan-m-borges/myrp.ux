@@ -33,7 +33,6 @@
 
 .field > i:first-child {
   position: absolute;
-  color: #9e9e9e;
   top: 50%;
   left: 4px;
   transform: translateY(-50%);
@@ -42,7 +41,6 @@
 
 .field > i:last-child {
   position: absolute;
-  color: #9e9e9e;
   top: 50%;
   right: 4px;
   transform: translateY(-50%);
