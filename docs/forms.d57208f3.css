@@ -130,10 +130,41 @@
 
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-appearance: none;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
-  vertical-align: middle;
-  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  content: "check_box_outline_blank";
+}
+
+input[type="checkbox"]:checked::after {
+  content: "check_box";
+}
+
+input[type="radio"]::after {
+  content: "radio_button_unchecked";
+}
+
+input[type="radio"]:checked::after {
+  content: "radio_button_checked";
 }
 
 input[type="checkbox"] + label,
