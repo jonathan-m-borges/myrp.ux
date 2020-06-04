@@ -69,6 +69,7 @@
 }
 
 .field > input[type="text"] + label {
+  animation: 0.1s label-to-middle;
   position: absolute;
   top: 50%;
   left: 0;
@@ -208,6 +209,7 @@ input[type="radio"] + label {
 }
 
 .field > select + label {
+  animation: 0.1s label-to-middle;
   position: absolute;
   top: 50%;
   left: 0;
@@ -279,5 +281,18 @@ input[type="radio"] + label {
     top: 4px;
     font-size: 0.8rem;
     transform: none;
+  }
+}
+
+@keyframes label-to-middle {
+  from {
+    top: 4px;
+    font-size: 0.8rem;
+    transform: none;
+  }
+  to {
+    top: 50%;
+    font-size: 0.9rem;
+    transform: translateY(-50%);
   }
 }
