@@ -37,37 +37,33 @@
   height: 75%;
 }
 
-.modal.open {
+.modal.active {
   display: inline-block;
   animation: 0.2s to-center;
 }
 
-.modal.open.left {
+.modal.active.left {
   display: inline-block;
   transform: none;
   animation: 0.2s to-right;
 }
 
-.modal.open.right {
+.modal.active.right {
   display: inline-block;
   transform: none;
   animation: 0.2s to-left;
 }
 
-.modal.open.top {
+.modal.active.top {
   display: inline-block;
   transform: none;
   animation: 0.2s to-bottom;
 }
 
-.modal.open.bottom {
+.modal.active.bottom {
   display: inline-block;
   transform: none;
   animation: 0.2s to-top;
-}
-
-.modal.close {
-  display: none;
 }
 
 .modal.top {

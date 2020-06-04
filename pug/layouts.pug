@@ -308,13 +308,13 @@ html
 		
 		#bottom.fixed.left.right.bottom.front.padding.grey.lighten-3.center-align
 			nav
-				a.btn(onclick="$('.modal')[0].className = 'modal open';") Modal
-				a.btn.round(onclick="$('.modal')[0].className = 'modal open';") Modal
-				a.btn.circle(onclick="$('.modal')[0].className = 'modal open';")
+				a.btn(onclick="$('.modal')[0].className = 'modal active';") Modal
+				a.btn.round(onclick="$('.modal')[0].className = 'modal active';") Modal
+				a.btn.circle(onclick="$('.modal')[0].className = 'modal active';")
 					i.material-icons open_in_new
-				a.btn.border(onclick="$('.modal')[0].className = 'modal open';") Modal
-				a.btn.border.round(onclick="$('.modal')[0].className = 'modal open';") Modal
-				a.btn.border.circle(onclick="$('.modal')[0].className = 'modal open';")
+				a.btn.border(onclick="$('.modal')[0].className = 'modal active';") Modal
+				a.btn.border.round(onclick="$('.modal')[0].className = 'modal active';") Modal
+				a.btn.border.circle(onclick="$('.modal')[0].className = 'modal active';")
 					i.material-icons open_in_new
 
 		#body
@@ -484,7 +484,7 @@ html
 						h5 List
 						.row.nowrap
 							.col
-								i.material-icons check_box_outline_blank
+								input(type='checkbox')
 							.col.min
 								nav
 									a.btn.flat.grey-text.hide-on-small-only Link 1
@@ -494,7 +494,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col.min
-								i.material-icons check_box_outline_blank
+								input(type='checkbox')
 							.col
 								div.truncate Primeira linha
 								label.truncate
@@ -506,7 +506,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col.min
-								i.material-icons check_box_outline_blank
+								input(type='checkbox')
 							.col
 								div.truncate Primeira linha
 								label.truncate
@@ -518,7 +518,7 @@ html
 										i.material-icons more_vert
 						.row.nowrap
 							.col.min
-								i.material-icons check_box_outline_blank
+								input(type='checkbox')
 							.col
 								div.truncate Primeira linha
 								label.truncate
@@ -544,7 +544,7 @@ html
 							thead
 								tr
 									th
-										i.material-icons check_box_outline_blank
+										input(type='checkbox')
 									th Coluna 1
 									th Coluna 2
 									th Coluna 3
@@ -552,7 +552,7 @@ html
 							tbody
 								tr
 									td
-										i.material-icons check_box_outline_blank
+										input(type='checkbox')
 									td Linha 1
 									td Linha 1
 									td Linha 1
@@ -563,7 +563,7 @@ html
 												i.material-icons more_vert
 								tr
 									td
-										i.material-icons check_box_outline_blank
+										input(type='checkbox')
 									td Linha 2
 									td Linha 2
 									td Linha 2
@@ -574,7 +574,7 @@ html
 												i.material-icons more_vert
 								tr
 									td
-										i.material-icons check_box_outline_blank
+										input(type='checkbox')
 									td Linha 3
 									td Linha 3
 									td Linha 3
@@ -731,11 +731,11 @@ html
 						h5 Modal
 						div Modal content
 						nav
-							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal left open';") Left
-							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal right open';") Right
-							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal top open';") Top
-							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal bottom open';") Bottom
-							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal open';") Reset
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal left active';") Left
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal right active';") Right
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal top active';") Top
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal bottom active';") Bottom
+							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal active';") Reset
 							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal';") Close
 
 	script(type='text/javascript').
