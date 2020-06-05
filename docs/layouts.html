@@ -247,7 +247,7 @@
   $(this).next().addClass("active");
 });
 $('input').on('blur', function () {
-  if ($(this).val()) $(this).next().addClass("active");
+  if (!$(this).val()) $(this).next().removeClass("active");
 });
 $('.menu-collapsed a').on('mouseover', function () {
   if (!$('.menu-expanded').is(':visible')) return;

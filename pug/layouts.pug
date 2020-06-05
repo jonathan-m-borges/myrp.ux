@@ -833,8 +833,8 @@ html
 		});
 
 		$('input').on('blur', function() {
-			if ($(this).val())
-				$(this).next().addClass("active");
+			if (!$(this).val())
+				$(this).next().removeClass("active");
 		});
 
 		$('.menu-collapsed a').on('mouseover', function() {
