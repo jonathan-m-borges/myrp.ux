@@ -21,7 +21,6 @@ html
 		link(href='../vendor/myrp/tabs.css', rel='stylesheet')
 
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js')
 		script(src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js')
 		script(src='../index.js')
 
@@ -589,7 +588,7 @@ html
 						.row
 							.col.s12.m4
 								.field
-									input(type="text")
+									input(placeholder=" ", type="text")
 									label Texto
 							.col.s12.m4
 								.field
@@ -829,9 +828,13 @@ html
 							a.btn.flat.blue-text(onclick="$('.modal')[0].className = 'modal';") Close
 
 	script(type='text/javascript').
-		$('#button-side-nav1').sideNav({
-			menuWidth: 700,
-			edge: 'right'
+		$('input').on('focus', function() {
+			$(this).next().addClass("active");
+		});
+
+		$('input').on('blur', function() {
+			if ($(this).val())
+				$(this).next().addClass("active");
 		});
 
 		$('.menu-collapsed a').on('mouseover', function() {
